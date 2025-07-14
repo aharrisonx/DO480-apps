@@ -7,8 +7,8 @@ metadata:
   name: frontend
   namespace: mysql
 spec:
-  host: todo.apps.azure-cluster-1.f8wxj.azure.redhatworkshops.io
-  path: "/todo/"
+  port:
+    targetPort: 8080
   to:
     kind: Service
     name: frontend
